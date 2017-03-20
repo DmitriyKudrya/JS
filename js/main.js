@@ -1,14 +1,19 @@
 
 window.onload = function() {
-  var title = document.getElementById('page')
-    .querySelector('h1');
 
-  console.info(title.innerHTML);
-  title.innerHTML = 'Hello';
-  console.info(title.innerHTML);
+var text = document.getElementById('page')
+	.querySelector ('h1');
+var colorScheme = ['blue','yellow','green','red','gray'];
+var i = 0;
 
-  setTimeout(function() {
-    console.info('title change');
-    title.style.backgroundColor = 'blue';
-  }, 2000);
+function changeColor() {
+   if(i>colorScheme.length){
+     i=0;
+   }
+    text.style.backgroundColor = colorScheme[i];  
+    i++;
+ }
+     setInterval(changeColor,1000);
 }
+
+  

@@ -3,9 +3,13 @@ img {
   width: 100%;
 }
 
+/*body {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}*/
 
-
-.wrap {
+.wrapper {
   width: 600px;
   margin: 0 auto;
   padding: 10px;
